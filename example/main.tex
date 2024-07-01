@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\begin{document}
+
+\section{Introduction}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\begin{theorem}
+Let \(f\) be a function whose derivative exists in every point, then \(f\) is a continuous function.
+\end{theorem}
+
+\begin{theorem}[Pythagorean theorem]
+\label{pythagorean}	
+This is about right triangles and can be summarised in the next equation \[ x^2 + y^2 = z^2 \]
+\end{theorem}
+
+And a consequence \ref{pythagorean} is the following statement:
+
+\begin{corollary}
+There's no right rectangle whose sides measure 3cm, 4cm, and 6cm.
+\end{corollary}
+
+\begin{lemma}
+Given two line segments whose lengths are \(a\) and \(b\) respectively there is a real number \(r\) such that \(b=ra\).
+\end{lemma}
+
+\end{document}
+
+% Source: This text was taken direclty from the Overleaf page! (Some changes were made to the original text.)
